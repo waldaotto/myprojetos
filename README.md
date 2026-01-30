@@ -1,2 +1,8 @@
 # myprojetos
-Portifólio pessoal com uma biblioteca de pequenos projetos simples, com finalidades estudantis. 
+Portifólio pessoal; uma biblioteca de pequenos projetos simples, com finalidades estudantis.
+
+## 🚀 Projetos
+### [Busca Produtos]()
+- Sistema que busca produtos,
+
+
