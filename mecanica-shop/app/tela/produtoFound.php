@@ -7,18 +7,13 @@
 <body>
     <h2>Produto encontrado</h2>
 
-    <form action="buscarproduto.php" method="get">
-    <label for="buscaproduto">Pesquisar produtos</label>
-    <input type="search" name="buscaproduto" placeholder="Digite o ID do produto ou nome...">
-    <button type="submit">Buscar</button>
-</form>
 
 <section>
     <div>
         <div>
             <table>
                 <thead>
-                    <tr>
+                    <tr data-theme="light">
                         <th scope="col">ID</th>
                         <th scope="col">Nome</th>
                         <th scope="col">Preço</th>

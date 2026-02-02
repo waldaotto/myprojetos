@@ -49,33 +49,11 @@ require_once "produtosdb.php";
     
    }
 
-   public function findbyname($name_produto){
-      $produtos = $GLOBALS["database"]["produtos"];
-      do {
-         foreach ($produtos as $key => $value) {
-            if($produtos[$key]["name"] == $name_produto){
-               $a = true;
-               $retorno = [
-                  "retorno"=>true,
-                  "infos"=>$produtos[$key],
-                  "id"=>$key
-               ];
-            }else{
-               $a = false;
-                $retorno = [
-                  "retorno"=>false,
-                  "n"=>3,
-                  "msg"=>"Produto não encontrado",
-                ];
-            }
-         }
-      } while ($a == true);
-
-      return $retorno;
-   }
-
    public function exibirTrue(){
-      require "../app/produtoFound.php";
+      require "../tela/produtoFound.php";
+   }
+   public function exibirFalse(){
+      require "../tela/produtoFalse.php";
    }
    
 }

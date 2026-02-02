@@ -13,9 +13,6 @@ if(isset($_GET["buscaproduto"]) && $_GET["buscaproduto"]!=null){
 if(is_int($query)){
     $stmt = $produto->findbyid($query);
 }
-elseif(ctype_alpha($query)){
-    $stmt = $produto->findbyname($query);
-}
 else{
     $stmt = "ERROR";
 }
@@ -27,6 +24,8 @@ if($stmt["retorno"]==true){
     
 }
 else{
-    //funcao deu ruim
+     $GLOBALS["stmt"] = $stmt["msg"];
+    $produto->exibirFalse();
+
 }
 }

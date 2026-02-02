@@ -17,13 +17,20 @@
                 </ul>
                 <ul>
                     <li><a href="#" class="contrast">Home</a></li>
-                    <li><a href="../app/produtos.php" class="contrast">Produtos</a></li>
+                    <li><a href="../app/tela/produtos.php" class="contrast">Produtos</a></li>
                     <li><a href="#" class="contrast">Sobre</a></li>
                     
                 </ul>
             </nav>
             <HR>
+<?php
+        $uri = $_SERVER["REQUEST_URI"];
+        if($uri != '/myprojetos/mecanica-shop/public/'){
+            ?>
             <button onclick="history.back()">Voltar</button>
 
+<?php
+           }
+?>
         </header>
     </section>

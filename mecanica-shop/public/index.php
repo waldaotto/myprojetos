@@ -1,4 +1,5 @@
 <?php
 
-include "../App/header.php";
-include "../App/home.php";
+include "../App/tela/header.php";
+include "../App/tela/home.php";
+

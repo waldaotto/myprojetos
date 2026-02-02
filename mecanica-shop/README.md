@@ -1,5 +1,5 @@
 # 🚖 Exemplo de Loja de Peças Automotivas
-- **Desenvolvido em PHP**
+- **Desenvolvido em PHP utilizando Picocss para estilização rapida.**
 
 ## 💡 Funções disponiveís:
 

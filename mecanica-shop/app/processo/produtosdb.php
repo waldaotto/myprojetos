@@ -114,9 +114,9 @@ $GLOBALS["database"] = [
             "estoque" => 100,
         ],
         19 => [
-            "nome" => "Fluido de Freio DOT 4",
-            "preco" => 34.90,
-            "descricao" => "Fluido de freio DOT 4 para máxima eficiência.",
+            "nome" => "Comi o cu de quem ta lendo",
+            "preco" => 00.01,
+            "descricao" => "Bem lentinho e agressivo",
             "estoque" => 65,
         ],
         20 => [

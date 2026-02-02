@@ -2,12 +2,12 @@
 
 <?php
 include "header.php";
-require_once "buscarprodutos.php";
+require_once "../processo/buscarprodutos.php";
 ?>
 <body>
     <h2>Pagina de Produtos</h2>
 
-    <form action="buscarprodutos.php" method="get">
+    <form action="../processo/buscarprodutos.php" method="get">
     <label for="buscaproduto">Pesquisar produtos</label>
     <input type="search" name="buscaproduto" placeholder="Digite o ID do produto ou nome...">
     <button type="submit">Buscar</button>
@@ -16,8 +16,8 @@ require_once "buscarprodutos.php";
 <section>
     <div>
         <div>
-            <table>
-                <thead>
+            <table class="striped">
+                <thead data-theme="light">
                     <tr>
                         <th scope="col">ID</th>
                         <th scope="col">Nome</th>
@@ -28,14 +28,14 @@ require_once "buscarprodutos.php";
                 </thead>
                 <tbody>
                     <?php
-                    require_once "ProdutosModel.php";
+                    require_once "../processo/ProdutosModel.php";
                     $prodmodel = new produtosModel;
                     $produtos = $prodmodel->findall();
                     foreach ($produtos as $key => $value) {
                         $precoformat = "R$ " . number_format($produtos[$key]["preco"], 2, ',', '.');
 ?>
                         <tr>
-                            <td><?= $key?></td>
+                            <td data-theme="dark"><?= $key?></td>
                             <th scope="row"><?= $produtos[$key]["nome"] ?></th>
                             <td><?= $precoformat?></td>
                             <td><?= $produtos[$key]["descricao"] ?></td>
