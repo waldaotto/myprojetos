@@ -1,5 +1,5 @@
 # myprojetos
-Portifólio pessoal; uma biblioteca de pequenos projetos simples, com finalidades estudantis.
+Portfolio para pequenos projetos que não necessitam grande arquitetura de diretorios.
 
 ## 🚀 Projetos
 ### [Mecanica Shop](https://github.com/waldaotto/myprojetos/tree/34019092e5ac1a670df3b594db4da637f2c98da3/mecanica-shop)
